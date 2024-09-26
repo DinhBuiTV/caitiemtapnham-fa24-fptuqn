@@ -415,7 +415,7 @@ header .carousel-inner .carousel-item > img, header .carousel-inner .carousel-it
   header {
     padding-top: 30px;
     position: relative;
-    height: 400px; /* Adjust as needed */
+    height: 600px; /* Adjust as needed */
     overflow: hidden; /* Ensures that any content doesn't overflow the header's borders */
     display: flex; /* Use flexbox to center content vertically */
     align-items: center; /* Center content vertically */
