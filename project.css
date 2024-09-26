@@ -123,7 +123,7 @@ ul.sidebar-dropdown > li:hover {
 .sidebar-button.dropdown:hover > ul.sidebar-dropdown {
     transform: translateY(0px);
     opacity: 1;
-    visibility: shown;
+    visibility: visible;
     transition: 0.25s ease-in-out;
 }
 
