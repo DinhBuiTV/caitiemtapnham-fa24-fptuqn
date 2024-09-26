@@ -32,7 +32,7 @@ body {
     z-index: 999;
 }
 
-.sidebar > a {
+button.sidebar-button > a {
     text-decoration: none;
     color: black;
 }
