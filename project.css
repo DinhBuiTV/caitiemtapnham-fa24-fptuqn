@@ -409,3 +409,130 @@ header .carousel-inner .carousel-item > img, header .carousel-inner .carousel-it
     margin-top: -90px;
     min-height: 300px;
 }
+
+/* Content */
+  /* Header */
+  header {
+    padding-top: 30px;
+    position: relative;
+    height: 400px; /* Adjust as needed */
+    overflow: hidden; /* Ensures that any content doesn't overflow the header's borders */
+    display: flex; /* Use flexbox to center content vertically */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+  }
+  
+  .headerBG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensures the image stays behind the text */
+  }
+  
+  img.Header-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire header */
+    filter: brightness(80%); /* Optional: Adjust brightness if needed */
+  }
+  
+  .header-info {
+    position: relative;
+    z-index: 1; /* Places the text in front of the image */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Adds a semi-transparent background for readability */
+    color: #fff;
+    text-align: center; /* Center text horizontally */
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  .header-info > h3 {
+    color: #f4ce14;
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  
+  /* Menu Section */
+  main {
+    padding: 30px;
+  }
+
+  .menu-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+  }
+  
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4ce14;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(33.333% - 15px); /* Ensures 3 items per row with spacing */
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+  
+  .menu-item-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .menu-item button {
+    background-color: #495e57;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .menu-item button:hover {
+    background-color: #102c23;
+  }
+  
+  /* Cart and Order Section */
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4ce14;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .remove-button {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .remove-button:hover {
+    background-color: #e63946;
+  }
+  
+  h2, h3 {
+    color: #495e57;
+  }
