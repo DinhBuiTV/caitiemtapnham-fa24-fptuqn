@@ -448,6 +448,8 @@ header .carousel-inner .carousel-item > img, header .carousel-inner .carousel-it
       rgba(0, 0, 0, 0.7)
     ), url("https://i.pinimg.com/originals/ca/d0/55/cad055b3ae3a786e99b76ed3b071b874.gif"); /* Adds a semi-transparent background for readability */
     color: #fff;
+          background-position: center;
+    background-size: cover;
     text-align: center; /* Center text horizontally */
     height: 100%;
     width: 100vw;
