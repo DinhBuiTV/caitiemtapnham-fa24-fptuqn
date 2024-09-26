@@ -99,6 +99,7 @@ ul.sidebar-dropdown {
     transform: translateY(-10px);
     transition: 0.25s ease-in-out;
     opacity: 0;
+    visibility: hidden;
     margin: 28px -7px 0 -7px;
     padding: 10px;
     background-color: #ffffff;
@@ -122,6 +123,7 @@ ul.sidebar-dropdown > li:hover {
 .sidebar-button.dropdown:hover > ul.sidebar-dropdown {
     transform: translateY(0px);
     opacity: 1;
+    visibility: shown;
     transition: 0.25s ease-in-out;
 }
 
