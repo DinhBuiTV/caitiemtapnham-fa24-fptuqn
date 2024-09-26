@@ -128,7 +128,8 @@ ul.sidebar-dropdown > li:hover {
     transition: 0.25s ease-in-out;
 }
 
-.sidebar-button.dropdown > p {
+.sidebar-button.dropdown > p, .sidebar-button.dropdown > a > p {
+    text-decoration: none;
     position: relative;
     margin-top: 25px;
     width: 100%;
