@@ -135,6 +135,10 @@ ul.sidebar-dropdown > li:hover {
     width: 100%;
 }
 
+.sidebar-button.dropdown > ul > li > a {
+    text-decoration: none;
+}
+
 
 
 .circle-button {
