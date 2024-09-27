@@ -576,4 +576,105 @@ header .carousel-inner .carousel-item > img, header .carousel-inner .carousel-it
   }
 }
 
+/* SEMI-FOOTER SECTION */
+
+.semi-footer-container {
+  background-color: #fedd58;
+  padding: 10px 50px 10px 50px;
+  width: calc(100vw + -10px);
+}
+
+.semi-footer-container .semi-footer-content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 20px;
+}
+
+.semi-footer-container .semi-footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.semi-footer-container .semi-footer-content .semi-footer-left h4 {
+  padding-top: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.semi-footer-container .semi-footer-left p {
+  text-align: center;
+}
+
+.semi-footer-container .semi-footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.semi-footer-container .semi-footer-right h4,
+.semi-footer-container .semi-footer-center h4 {
+  font-family: "Anton", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.semi-footer-container .semi-footer-right a {
+  color: #000;
+}
+
+@media (max-width: 1200px) {
+  .semi-footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* FOOTER SECTION */
+
+.footer-container {
+  display: flex;
+  padding: 20px 50px 20px 50px;
+  align-content: center;
+  background-color: black;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: calc(100vw + -10px);
+}
+
+.footer-container p {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+
+button#header-button {
+  background-color: rgb(145, 92, 0);
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  pointer-events: auto;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 10px 0px;
+  margin: 10px 0 10px 0;
+}
+
+button#header-button:hover {
+  background-color: rgb(92, 253, 253);
+  color: rgb(0, 140, 255);
+}
+
 
