@@ -553,7 +553,7 @@ header .carousel-inner .carousel-item > img, header .carousel-inner .carousel-it
   }
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1000px) {
   .login-form {
     padding-top: 120px;
   }
