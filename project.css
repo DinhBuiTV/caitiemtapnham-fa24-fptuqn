@@ -522,6 +522,8 @@ header .carousel-inner .carousel-item > img, header .carousel-inner .carousel-it
     display: flex;
     flex-direction: row;
     gap: 20px;
+    height: 100vh;
+    overflow: hidden;
   }
 
   .login-img {
@@ -551,9 +553,6 @@ header .carousel-inner .carousel-item > img, header .carousel-inner .carousel-it
   .login-img {
     display: none;
   }
-}
-
-@media (max-width: 1000px) {
   .login-form {
     padding-top: 120px;
   }
@@ -565,5 +564,15 @@ header .carousel-inner .carousel-item > img, header .carousel-inner .carousel-it
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .login-form {
+    padding-top: 120px;
+    height: 100vh;
+    overflow: scroll;
+    padding-right: 20px;
+    padding-bottom: 20px;
   }
 }
