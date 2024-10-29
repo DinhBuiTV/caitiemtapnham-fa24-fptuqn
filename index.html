@@ -25,26 +25,63 @@
   <!-- Sidebar -->
 
   <div class="sidebar row justify-content-between">
-    <div class="sidebar-logo col-2">
+    <div class="sidebar-logo col-lg-2 col-6">
+      <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+        aria-controls="staticBackdrop">
+        <span class="material-symbols-rounded">
+          menu
+        </span>
+      </button>
+
+      <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="staticBackdropLabel">
+            <img src="img/Logo.png" alt="" height="60px" class="sidebar-logo-img" />
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <ul class="sidebar-offcanvas-mobile">
+              <li><a href="homepage.html" class="homepage-site"><span class="material-symbols-rounded">home</span> Trang chủ </a></li>
+              <li><a href="product.html" class="product-site"><span class="material-symbols-rounded">info</span> Giới thiệu</a></li>
+              <li><span class="material-symbols-rounded">grocery</span> Sản phẩm</li>
+              <li><span class="material-symbols-rounded">news</span> Blog </li>
+              <li><span class="material-symbols-rounded">person</span> Đăng nhập</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <img src="img/Logo.png" alt="" height="60px" class="sidebar-logo-img" />
     </div>
     <div class="sidebar-menu-list col-7 align-items-center">
-      <button class="sidebar-button active"><a href="homepage.html" class="homepage-site"><span
-            class="material-symbols-rounded">home</span>Trang chủ</a></button>
-      <button class="sidebar-button dropdown">
-        <a href="product.html" class="contact-site">
-          <p> <span class="material-symbols-rounded">grocery</span> Sản phẩm <span
-              class="material-symbols-rounded dropdown">
-              keyboard_arrow_down
-            </span></p>
+      <button class="sidebar-button active">
+        <a href="homepage.html" class="homepage-site">
+          <span class="material-symbols-rounded">home</span> Trang chủ
         </a>
-        <ul class="sidebar-dropdown">
-          <li><a href="sanphamhot.html" class="contact-site">Sản phẩm hot</a></li>
-          <li>Sale</li>
-          <li>Sản phẩm mới</li>
-
-        </ul>
       </button>
+
+      <button class="sidebar-button">
+        <a href="product.html" class="product-site">
+          <span class="material-symbols-rounded">info</span> Giới thiệu
+        </a>
+      </button>
+
+      <button class="sidebar-button">
+        <a href="product.html" class="product-site">
+          <span class="material-symbols-rounded">grocery</span> Sản phẩm
+        </a>
+      </button>
+
+      <button class="sidebar-button">
+        <a href="product.html" class="product-site">
+          <span class="material-symbols-rounded">
+            news
+            </span> Blog
+        </a>
+      </button>
+      
       <button class="sidebar-button dropdown"><a href="Contact tạp nham.html" class="contact-site">
           <p> <span class="material-symbols-rounded">person</span> Tài khoản <span
               class="material-symbols-rounded dropdown">
@@ -65,7 +102,7 @@
   <!-- Sidebar -->
   <div class="MainContent">
 
-    <header class="header" style="padding-top: 90px;">
+    <header class="header col-12" style="padding-top: 90px;">
 
       <!-- <div class="headerBG"><img class="Header-bg"
           src="https://i.pinimg.com/originals/ca/d0/55/cad055b3ae3a786e99b76ed3b071b874.gif"
@@ -75,20 +112,16 @@
         <p>Các đơn hàng có tổng thành tiền trên 40k sẽ được bốc thăm may mắn. Đừng bỏ lỡ nhé!</p>
       </div> -->
 
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleInterval" class="carousel slide col-12 justify-content-center" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="https://i.pinimg.com/originals/ca/d0/55/cad055b3ae3a786e99b76ed3b071b874.gif"
-              class="d-block w-100" alt="1">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <h2 class="text-center">Hello and welcome</h2>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img
-              src="https://camo.githubusercontent.com/49fcb3def2d031bc058feaffaae66fbc68f0f2354ced515175fa6ae1377c0bdf/68747470733a2f2f6173736574732e7374617274626f6f7473747261702e636f6d2f696d672f73637265656e73686f74732f7468656d65732f63726561746976652e706e67"
-              class="d-block w-100" alt="2">
+          <div class="carousel-item" data-bs-interval="5000">
+            <h2 class="text-center">Hello and welcom</h2>
           </div>
-          <div class="carousel-item">
-            <img src="https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png"
-              class="d-block w-100" alt="3">
+          <div class="carousel-item" data-bs-interval="5000">
+            <h2 class="text-center">Hello and welcoe</h2>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -103,11 +136,12 @@
         </button>
       </div>
 
+
     </header>
 
     <div class="wrapper">
       <main>
-        <h1 style="    text-align: center; margin-bottom: 30px;">Menu</h1>
+        <h1 style="text-align: center; margin-bottom: 30px;">Menu</h1>
         <div class="menu-section">
           <div class="menu-list">
             <div class="menu-item"><img
@@ -160,11 +194,11 @@
   </div>
 
   <div class='semi-footer-container'>
-    <div class='semi-footer-content'>
-      <div class='semi-footer-left'>
-        <a href='#'> <img alt='' class='Semifooter-logo' src='img/Logo.png' width="300px" /> </a>
+    <div class='semi-footer-content row'>
+      <div class='semi-footer-left col-lg-2'>
+        <a href='#'> <img alt='' class='Semifooter-logo' src='img/Logo.png' /> </a>
       </div>
-      <div class='semi-footer-right'>
+      <div class='semi-footer-right col-lg-3'>
         <H4>LIÊN HỆ TÔI</H4>
         <a style='display: flex; gap: 10px;' href="tel:0862203411"><img
             src="https://cdn-icons-png.flaticon.com/128/5068/5068731.png" alt="" height="20px" />0123456789</button></a>
