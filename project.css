@@ -392,6 +392,24 @@ ul.sidebar-dropdown > li:hover {
     gap: 10px;
 }
 
+/* Sidebar for mobile */
+.offcanvas {
+  background-color: #fedd58 !important;
+}
+
+ul.sidebar-offcanvas-mobile > li {
+  list-style: none;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #fedd58;
+  transition: ease-in-out 0.25s;
+}
+
+ul.sidebar-offcanvas-mobile > li:hover {
+  color: #9d7500;
+  transition: ease-in-out 0.25s;
+}
+
 /* Homepage header */
 
 header {

@@ -36,12 +36,20 @@
       <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
         aria-labelledby="staticBackdropLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+          <h5 class="offcanvas-title" id="staticBackdropLabel">
+            <img src="img/Logo.png" alt="" height="60px" class="sidebar-logo-img" />
+          </h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <div>
-            Trang chủ của cái tiệm tạp nham vình định
+            <ul class="sidebar-offcanvas-mobile">
+              <li><span class="material-symbols-rounded">home</span> Trang chủ</li>
+              <li><span class="material-symbols-rounded">info</span> Giới thiệu</li>
+              <li><span class="material-symbols-rounded">grocery</span> Sản phẩm</li>
+              <li><span class="material-symbols-rounded">news</span> Blog </li>
+              <li><span class="material-symbols-rounded">person</span> Đăng nhập</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -56,7 +64,21 @@
 
       <button class="sidebar-button">
         <a href="product.html" class="product-site">
+          <span class="material-symbols-rounded">info</span> Giới thiệu
+        </a>
+      </button>
+
+      <button class="sidebar-button">
+        <a href="product.html" class="product-site">
           <span class="material-symbols-rounded">grocery</span> Sản phẩm
+        </a>
+      </button>
+
+      <button class="sidebar-button">
+        <a href="product.html" class="product-site">
+          <span class="material-symbols-rounded">
+            news
+            </span> Blog
         </a>
       </button>
       
