@@ -261,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 998;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1510px) {
 .sidebar-logo > button {display: none;}
 }
 
@@ -292,6 +292,10 @@ button.sidebar-button > a {
 
     .sidebar {
         padding: 0 40px 0 40px;
+    }
+
+    .sidebar-logo button.btn {
+      display: none;
     }
 }
 
