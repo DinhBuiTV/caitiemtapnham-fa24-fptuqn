@@ -430,20 +430,14 @@ ul.sidebar-offcanvas-mobile > li > a:hover {
 
 header {
   width: 100vw;
-  height: 70%;
-  max-height: 800px;
+  height: 100%;
+  max-height: 1000px;
   min-height: 300px;
   background-position: center;
-  padding-top: 90px;
   display: flex;
   overflow: hidden;
   position: relative;
   background: url("https://images.prismic.io/glovo-about/65ba5dfd615e73009ec426f8_desktop-header-3.gif?auto=format,compress");
-}
-
-/* Ensure images take the full width of the carousel */
-header .carousel .carousel-inner .carousel-item img {
-  width: 100vw !important;
 }
 
 
@@ -466,24 +460,6 @@ header .carousel .carousel-inner .carousel-item img {
 
 /* Content */
   /* Header */
-  header {
-    padding-top: 30px;
-    position: relative;
-    height: 600px; /* Adjust as needed */
-    overflow: hidden; /* Ensures that any content doesn't overflow the header's borders */
-    display: flex; /* Use flexbox to center content vertically */
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-  }
-  
-  .headerBG {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Ensures the image stays behind the text */
-  }
   
   img.Header-bg {
     width: 100%;
