@@ -460,6 +460,10 @@ header {
 
 
 /* Content */
+
+  .wrapper {
+    max-width: 960px;
+  }
   /* Header */
   
   img.Header-bg {
