@@ -414,6 +414,18 @@ ul.sidebar-offcanvas-mobile > li:hover {
   transition: ease-in-out 0.25s;
 }
 
+ul.sidebar-offcanvas-mobile > li > a {
+  text-decoration: none;
+  color: black;
+  transition: ease-in-out 0.25s;
+}
+
+ul.sidebar-offcanvas-mobile > li > a:hover {
+  text-decoration: none;
+  color: #9d7500;
+  transition: ease-in-out 0.25s;
+}
+
 /* Homepage header */
 
 header {

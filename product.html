@@ -24,24 +24,63 @@
   <!-- Sidebar -->
 
   <div class="sidebar row justify-content-between">
-    <div class="sidebar-logo col-2">
+    <div class="sidebar-logo col-lg-2 col-6">
+      <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+        aria-controls="staticBackdrop">
+        <span class="material-symbols-rounded">
+          menu
+        </span>
+      </button>
+
+      <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="staticBackdropLabel">
+            <img src="img/Logo.png" alt="" height="60px" class="sidebar-logo-img" />
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <ul class="sidebar-offcanvas-mobile">
+              <li><a href="homepage.html" class="homepage-site"><span class="material-symbols-rounded">home</span> Trang chủ </a></li>
+              <li><a href="about.html" class="product-site"><span class="material-symbols-rounded">info</span> Giới thiệu</a></li>
+              <li><a href="product.html" class="contact-site"> <span class="material-symbols-rounded">grocery</span> Sản phẩm</a> </li>
+              <li><a href="blog.html" class="contact-site"><span class="material-symbols-rounded">news</span> Blog </a></li>
+              <li><a href="Contact tạp nham.html" class="contact-site"><span class="material-symbols-rounded">person</span> Đăng nhập</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <img src="img/Logo.png" alt="" height="60px" class="sidebar-logo-img" />
     </div>
     <div class="sidebar-menu-list col-7 align-items-center">
-      <button class="sidebar-button"><a href="homepage.html" class="homepage-site"><span
-            class="material-symbols-rounded">home</span>Trang chủ</a></button>
-      <button class="sidebar-button dropdown active">
-        <a href="product.html" class="contact-site"> <p> <span class="material-symbols-rounded">grocery</span> Sản phẩm <span
-            class="material-symbols-rounded dropdown">
-            keyboard_arrow_down
-          </span></p> </a>
-        <ul class="sidebar-dropdown">
-          <li><a href="sanphamhot.html" class="contact-site">Sản phẩm hot</a></li>
-          <li>Sale</li>
-          <li>Sản phẩm mới</li>
-
-        </ul>
+      <button class="sidebar-button active">
+        <a href="homepage.html" class="homepage-site">
+          <span class="material-symbols-rounded">home</span> Trang chủ
+        </a>
       </button>
+
+      <button class="sidebar-button">
+        <a href="about.html" class="product-site">
+          <span class="material-symbols-rounded">info</span> Giới thiệu
+        </a>
+      </button>
+
+      <button class="sidebar-button">
+        <a href="product.html" class="product-site">
+          <span class="material-symbols-rounded">grocery</span> Sản phẩm
+        </a>
+      </button>
+
+      <button class="sidebar-button">
+        <a href="blog.html" class="product-site">
+          <span class="material-symbols-rounded">
+            news
+            </span> Blog
+        </a>
+      </button>
+      
       <button class="sidebar-button dropdown"><a href="Contact tạp nham.html" class="contact-site">
           <p> <span class="material-symbols-rounded">person</span> Tài khoản <span
               class="material-symbols-rounded dropdown">
@@ -114,29 +153,29 @@
     </div>
   </div>
   
-      <div class='semi-footer-container'>
-          <div class='semi-footer-content'>
-              <div class='semi-footer-left'>
-                  <a href='#'> <img alt='' class='Semifooter-logo' src='img/Logo.png' width="300px" /> </a>
-              </div>
-              <div class='semi-footer-right'>
-                  <H4>LIÊN HỆ TÔI</H4>
-                  <a style='display: flex; gap: 10px;' href="tel:0862203411"><img src="https://cdn-icons-png.flaticon.com/128/5068/5068731.png" height="20px"/>0123456789</button></a>
-                  <a style='display: flex; gap: 10px;' href="mailto:nguyendinhct2004@gmail.com"><img src="https://cdn-icons-png.flaticon.com/128/3916/3916631.png" height="20px"/>caitiemtapnham@gmail.com</button></a>
-                  <div class='semi-footer-social'>
-                      <a href="#"><button id="header-button" style="padding-top: 10px; display: flex; gap: 5px; justify-items: center;"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-white-icon.png" height="20px"/></button></a>
-                      <a href="#"><button id="header-button" style="padding-top: 10px; display: flex; gap: 5px; justify-items: center;"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-app-round-white-icon.png" height="20px"/></button></a>
-                      <a href="#"><button id="header-button" style="padding-top: 10px; display: flex; gap: 5px; justify-items: center;"><img src="https://troyredfern.com/wp-content/uploads/2021/04/new-instagram-logo-white-border-icon-png-large.png" height="20px"/></button></a>
-                      <a href="#"><button id="header-button" style="padding-top: 10px; display: flex; gap: 5px; justify-items: center;"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/x-social-media-white-icon.png" height="20px"/></button></a>
-                      <a href="#"><button id="header-button" style="padding-top: 10px; display: flex; gap: 5px; justify-items: center;"><img src="https://www.edigitalagency.com.au/wp-content/uploads/TikTok-icon-white-symbol-glyph-png.png" height="20px"/></button></a>
-                  </div>
-              </div>
-          </div>
+  <div class='semi-footer-container'>
+    <div class='semi-footer-content row'>
+      <div class='semi-footer-left col-lg-2'>
+        <a href='#'> <img alt='' class='Semifooter-logo' src='img/Logo.png' /> </a>
       </div>
-      <footer class="footer-container">
-          <div style="display: flex; gap: 10px;"><img src="https://img.icons8.com/ios_filled/200/FFFFFF/github.png" width="auto" height="24px"/><p>Created by GitHub</p></div>
-          <p>CÁI TIỆM TẠP NHAM © 2024</p>
-      </footer>
+      <div class='semi-footer-right col-lg-3'>
+        <H4>LIÊN HỆ TÔI</H4>
+        <a style='display: flex; gap: 10px;' href="tel:0862203411"><img
+            src="https://cdn-icons-png.flaticon.com/128/5068/5068731.png" alt="" height="20px" />0123456789</button></a>
+        <a style='display: flex; gap: 10px;' href="mailto:nguyendinhct2004@gmail.com"><img alt=""
+            src="https://cdn-icons-png.flaticon.com/128/3916/3916631.png"
+            height="20px" />caitiemtapnham@gmail.com</button></a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-container">
+    <div style="display: flex; gap: 10px;"><img alt="" src="https://img.icons8.com/ios_filled/200/FFFFFF/github.png"
+        width="auto" height="24px" />
+      <p>Created by GitHub</p>
+    </div>
+    <p>CÁI TIỆM TẠP NHAM © 2024</p>
+  </footer>
 
 </body>
 

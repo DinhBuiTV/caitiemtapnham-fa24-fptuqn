@@ -281,28 +281,67 @@ global $conn;
 
 <body>
 
-    <!-- Sidebar -->
+     <!-- Sidebar -->
 
-    <div class="sidebar row justify-content-between">
-    <div class="sidebar-logo col-2">
+  <div class="sidebar row justify-content-between">
+    <div class="sidebar-logo col-lg-2 col-6">
+      <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+        aria-controls="staticBackdrop">
+        <span class="material-symbols-rounded">
+          menu
+        </span>
+      </button>
+
+      <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="staticBackdropLabel">
+            <img src="img/Logo.png" alt="" height="60px" class="sidebar-logo-img" />
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <ul class="sidebar-offcanvas-mobile">
+              <li><a href="homepage.html" class="homepage-site"><span class="material-symbols-rounded">home</span> Trang chủ </a></li>
+              <li><a href="about.html" class="product-site"><span class="material-symbols-rounded">info</span> Giới thiệu</a></li>
+              <li><a href="product.html" class="contact-site"> <span class="material-symbols-rounded">grocery</span> Sản phẩm</a> </li>
+              <li><a href="blog.html" class="contact-site"><span class="material-symbols-rounded">news</span> Blog </a></li>
+              <li><a href="Contact tạp nham.html" class="contact-site"><span class="material-symbols-rounded">person</span> Đăng nhập</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <img src="img/Logo.png" alt="" height="60px" class="sidebar-logo-img" />
     </div>
     <div class="sidebar-menu-list col-7 align-items-center">
-      <button class="sidebar-button"><a href="homepage.html" class="homepage-site"><span
-            class="material-symbols-rounded">home</span>Trang chủ</a></button>
-      <button class="sidebar-button dropdown">
-        <a href="product.html" class="contact-site"> <p> <span class="material-symbols-rounded">grocery</span> Sản phẩm <span
-            class="material-symbols-rounded dropdown">
-            keyboard_arrow_down
-          </span></p> </a>
-        <ul class="sidebar-dropdown">
-          <li><a href="sanphamhot.html" class="contact-site">Sản phẩm hot</a></li>
-          <li>Sale</li>
-          <li>Sản phẩm mới</li>
-
-        </ul>
+      <button class="sidebar-button active">
+        <a href="homepage.html" class="homepage-site">
+          <span class="material-symbols-rounded">home</span> Trang chủ
+        </a>
       </button>
-      <button class="sidebar-button dropdown active"><a href="Contact tạp nham.html" class="contact-site">
+
+      <button class="sidebar-button">
+        <a href="about.html" class="product-site">
+          <span class="material-symbols-rounded">info</span> Giới thiệu
+        </a>
+      </button>
+
+      <button class="sidebar-button">
+        <a href="product.html" class="product-site">
+          <span class="material-symbols-rounded">grocery</span> Sản phẩm
+        </a>
+      </button>
+
+      <button class="sidebar-button">
+        <a href="blog.html" class="product-site">
+          <span class="material-symbols-rounded">
+            news
+            </span> Blog
+        </a>
+      </button>
+      
+      <button class="sidebar-button dropdown"><a href="Contact tạp nham.html" class="contact-site">
           <p> <span class="material-symbols-rounded">person</span> Tài khoản <span
               class="material-symbols-rounded dropdown">
               keyboard_arrow_down
@@ -318,7 +357,8 @@ global $conn;
       <span class="circle-button material-symbols-rounded">shopping_cart</span>
     </div>
   </div>
-    <!-- Sidebar -->
+
+  <!-- Sidebar -->
     <div class="wrapper-account">
         <div class="login-img">
             <img src="https://i.pinimg.com/originals/ca/d0/55/cad055b3ae3a786e99b76ed3b071b874.gif" alt="" class="login-img-src">
@@ -349,10 +389,10 @@ global $conn;
             </form>
             <hr>
             <div class="text-center">
-                <a class="small" href="forgot-password.html">Bạn đã có tài khoản?</a>
+                <a class="small" href="forgot-password.html">Quên mật khẩu?</a>
             </div>
             <div class="text-center">
-                <a class="small" href="Đăng kí cttn.html">Đăng nhập!</a>
+                <a class="small" href="Đăng kí cttn.html">Đăng ký</a>
             </div>
             </form>
             <!-- Bootstrap core JavaScript-->
