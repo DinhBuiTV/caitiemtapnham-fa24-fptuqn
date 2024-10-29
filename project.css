@@ -261,6 +261,10 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 998;
 }
 
+@media only screen and (min-width: 1000px) {
+.sidebar-logo > button {display: none;}
+}
+
 button.sidebar-button > a {
     text-decoration: none;
     color: black;
@@ -391,28 +395,40 @@ ul.sidebar-dropdown > li:hover {
 /* Homepage header */
 
 header {
-    width: 100vw;
-    height: 70%;
-    max-height: 800px;
-    min-height: 300px;
-    background-position: center;
-    padding-top: 90px;
-    display: flex; 
-    overflow: hidden;  
-    position: relative;
+  width: 100vw;
+  height: 70%;
+  max-height: 800px;
+  min-height: 300px;
+  background-position: center;
+  padding-top: 90px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  background: url("https://images.prismic.io/glovo-about/65ba5dfd615e73009ec426f8_desktop-header-3.gif?auto=format,compress");
 }
 
-.carousel-inner {
-    width: 100%;
+/* Ensure images take the full width of the carousel */
+header .carousel .carousel-inner .carousel-item img {
+  width: 100vw !important;
 }
 
-header .carousel-inner .carousel-item > img, header .carousel-inner .carousel-item.active > img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-    margin-top: -90px;
-    min-height: 300px;
+
+/* Previous slide: Slide out to left and fade out */
+
+.carousel-item-end.carousel-item-prev {
+  transform: translateX(0);
+  animation-name: fade-in-out-carousel;
+  animation-duration: 0.25s;
+  animation-delay: 0.5s;
+  animation-direction: reverse;
 }
+
+/* Ensure smooth fade and slide during the transition */
+
+@keyframes fade-in-out-carousel {
+  from {opacity: 0;} to {opacity: 1;}
+}
+
 
 /* Content */
   /* Header */
@@ -584,9 +600,13 @@ header .carousel-inner .carousel-item > img, header .carousel-inner .carousel-it
   width: calc(100vw + -10px);
 }
 
+img.Semifooter-logo {
+  height: 100%;
+  max-height: 120px;
+}
+
 .semi-footer-container .semi-footer-content {
   margin: 0 auto;
-  display: flex;
   justify-content: space-around;
   margin-top: 20px;
   padding-top: 20px;
@@ -639,6 +659,7 @@ header .carousel-inner .carousel-item > img, header .carousel-inner .carousel-it
 /* FOOTER SECTION */
 
 .footer-container {
+  font-family: "Roboto", sans-serif;
   display: flex;
   padding: 20px 50px 20px 50px;
   align-content: center;
