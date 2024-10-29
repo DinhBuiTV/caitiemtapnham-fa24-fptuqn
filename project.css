@@ -270,7 +270,7 @@ button.sidebar-button > a {
     color: black;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1510px) {
     .sidebar-menu-list {
         display: none;
     }
@@ -280,7 +280,7 @@ button.sidebar-button > a {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1510px) {
     .sidebar-menu-list {
         display: flex;
         align-items: center;
