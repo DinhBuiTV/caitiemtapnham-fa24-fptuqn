@@ -438,7 +438,7 @@ header {
   overflow: hidden;
   position: relative;
   background-size: cover;
-  background: url("https://images.prismic.io/glovo-about/65ba5dfd615e73009ec426f8_desktop-header-3.gif?auto=format,compress");
+  background-image: url("https://images.prismic.io/glovo-about/65ba5dfd615e73009ec426f8_desktop-header-3.gif?auto=format,compress");
 }
 
 
@@ -463,6 +463,7 @@ header {
 
   .wrapper {
     max-width: 960px;
+    padding: 20px;
   }
   /* Header */
   
